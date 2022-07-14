@@ -21,7 +21,7 @@ public class Movimentacao {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	@Column(name = "data_hora")
 	private LocalDateTime datahora;
 	private String descricao;
